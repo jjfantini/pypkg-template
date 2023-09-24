@@ -23,7 +23,8 @@
 				"modular-mojotools.vscode-mojo",
 				"VisualStudioExptTeam.vscodeintellicode",
 				"VisualStudioExptTeam.intellicode-api-usage-examples",
-				"ms-vscode-remote.remote-wsl"
+				"ms-vscode-remote.remote-wsl",
+				"mightbesimon.emoji-icons"
 			],
 			"settings": {
 				"python.defaultInterpreterPath": "/usr/local/bin/python",
