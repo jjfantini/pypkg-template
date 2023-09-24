@@ -10,8 +10,11 @@ RUN apt-get update && \
     apt-get clean && \
     rm -rf /var/lib/apt/lists/*
 
-RUN python -m pip install --upgrade pip \
-    && python -m pip install poetry
+# Add environment variables to .bashrc
+RUN echo 'export MODULAR_HOME="/home/vscode/.modular"' >> ~/.bashrc && \
+    echo 'export PATH="/home/vscode/.modular/pkg/packages.modular.com_mojo/bin:$PATH"' >> ~/.bashrc
+
+# Other commands...
 
 COPY pyproject.toml .
 RUN touch README.md \
@@ -19,6 +22,5 @@ RUN touch README.md \
     && poetry install --no-root \
     && rm -r pyproject.toml README.md src
 
-
-# This command will run when the container starts
-CMD ["modular", "install", "mojo"]
+# Install Mojo
+RUN /bin/bash -c "source ~/.bashrc && modular install mojo"
