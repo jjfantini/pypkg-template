@@ -5,7 +5,8 @@
 	"recommendations": [
 		"modular-mojotools.vscode-mojo",
 		"ms-vscode-remote.remote-wsl",
-		"mightbesimon.emoji-icons"
+		"mightbesimon.emoji-icons",
+		"tamasfe.even-better-toml"
 	],
 	// List of extensions recommended by VS Code that should not be recommended for users of this workspace.
 	"unwantedRecommendations": []

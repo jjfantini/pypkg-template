@@ -1,0 +1,2 @@
+
+"""Mojo Package Template"""
