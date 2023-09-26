@@ -25,7 +25,8 @@
 				"VisualStudioExptTeam.intellicode-api-usage-examples",
 				"ms-vscode-remote.remote-wsl",
 				"mightbesimon.emoji-icons",
-				"tamasfe.even-better-toml"
+				"tamasfe.even-better-toml",
+				"KnisterPeter.vscode-commitizen"
 			],
 			"settings": {
 				"python.defaultInterpreterPath": "/usr/local/bin/python",

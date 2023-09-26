@@ -1,12 +1,16 @@
 [tool.poetry]
-name = "pypkg-template"
+name = "mypackage"
 version = "0.1.0"
 description = "A Python Package Template"
 authors = ["Your Name <youremail@example.com>"]
+packages = [
+    { include = "mypackage", from = "src" }
+]
 
 [tool.poetry.dependencies]
 python = "^3.10"
 open-interpreter = "^0.1.4"
+commitizen = "^3.10.0"
 
 [tool.poetry.dev-dependencies]
 
