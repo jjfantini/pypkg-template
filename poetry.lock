@@ -837,13 +837,13 @@ files = [
 
 [[package]]
 name = "open-interpreter"
-version = "0.1.5"
+version = "0.1.6"
 description = "Let language models run code locally."
 optional = false
 python-versions = ">=3.10,<4.0"
 files = [
-    {file = "open_interpreter-0.1.5-py3-none-any.whl", hash = "sha256:ad99048fec1bde445127770a2806b26e430b900d80601612c014a558f519bdb3"},
-    {file = "open_interpreter-0.1.5.tar.gz", hash = "sha256:17307c2c351de9ab7fe94a5b6281091a34d6d1aca3b080a264ca25a987920b8f"},
+    {file = "open_interpreter-0.1.6-py3-none-any.whl", hash = "sha256:f1c371cddc38046bd6ed1f88f85e871d342cf55bae1deaf9cabdb37a795ca664"},
+    {file = "open_interpreter-0.1.6.tar.gz", hash = "sha256:28b0e0ccdc40e139df5ac06f25e1684511406b9c8ddccdded40088158619213a"},
 ]
 
 [package.dependencies]
@@ -1595,4 +1595,4 @@ testing = ["big-O", "jaraco.functools", "jaraco.itertools", "more-itertools", "p
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.10"
-content-hash = "078c054c2e18529722a3dc962273eb827909907f909557d8e76d732bc8459078"
+content-hash = "da6463c9e777b355b19bf0dfc779bcefcf6953395ee62dceed9c948788b94caa"
