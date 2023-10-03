@@ -310,6 +310,20 @@ files = [
 ]
 
 [[package]]
+name = "click"
+version = "8.1.7"
+description = "Composable command line interface toolkit"
+optional = false
+python-versions = ">=3.7"
+files = [
+    {file = "click-8.1.7-py3-none-any.whl", hash = "sha256:ae74fb96c20a0277a1d615f1e4d73c8414f5a98db8b799a7931d1582f3390c28"},
+    {file = "click-8.1.7.tar.gz", hash = "sha256:ca9853ad459e787e2192211578cc907e7594e294c7ccc834310722b41b9ca6de"},
+]
+
+[package.dependencies]
+colorama = {version = "*", markers = "platform_system == \"Windows\""}
+
+[[package]]
 name = "colorama"
 version = "0.4.6"
 description = "Cross-platform colored terminal text."
@@ -632,16 +646,18 @@ ansicon = {version = "*", markers = "platform_system == \"Windows\""}
 
 [[package]]
 name = "litellm"
-version = "0.1.758"
+version = "0.1.815"
 description = "Library to easily interface with LLM API providers"
 optional = false
 python-versions = ">=3.8,<4.0"
 files = [
-    {file = "litellm-0.1.758-py3-none-any.whl", hash = "sha256:900333584e94da7b2b96bb8bde0ee170ce9688db35522211da7d77ddbf8812b8"},
-    {file = "litellm-0.1.758.tar.gz", hash = "sha256:f5afc1adfedd0e7ecf30b23ea63a8cfa468c0cdfeaf551f187b2dfe9ff9104fc"},
+    {file = "litellm-0.1.815-py3-none-any.whl", hash = "sha256:e4eb42baf7a1d5f107bb41bfedc1859da1f9ab7a34e9550ac8707d9ada8e2961"},
+    {file = "litellm-0.1.815.tar.gz", hash = "sha256:f4a4821289673bb4d0ea9ba2733f99e2697d3b316fd20ef257d87b8e7db7b2c7"},
 ]
 
 [package.dependencies]
+appdirs = ">=1.4.4,<2.0.0"
+click = "*"
 importlib-metadata = ">=6.8.0"
 openai = ">=0.27.0,<0.29.0"
 python-dotenv = ">=0.2.0"
