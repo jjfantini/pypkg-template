@@ -9,7 +9,7 @@ packages = [
 
 [tool.poetry.dependencies]
 python = "^3.10"
-open-interpreter = "^0.1.4"
+open-interpreter = "^0.1.10"
 commitizen = "^3.10.0"
 
 [tool.poetry.dev-dependencies]
